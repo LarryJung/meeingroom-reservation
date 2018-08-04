@@ -77,9 +77,8 @@ $(document).on("click", "#btnCancel", function (e) {
     var select = $(this);
     var currentUrl = window.location.href;
     var relativeUrl = currentUrl.replace("http://localhost:8080", "");
-    var aa = $('#template-booker');
     console.log("reservation id : " + select.attr('value'));
-    var cancelUrl = "/api" + relativeUrl + '?' + $.param({"reservationId": select.attr('value'), "bookerId": aa.attr('content')});
+    var cancelUrl = "/api" + relativeUrl + '?' + $.param({"reservationId": select.attr('value'), "bookerId": select.attr('content')});
     console.log(cancelUrl);
     var token = localStorage.getItem('token');
     $.ajaxSetup({

@@ -98,9 +98,9 @@
     <tr id="template-row">
         <td id="template-start-time">\{{start_time}}</td>
         <td id="template-end-time" style="text-align:center">\{{end_time}}</td>
-        <td id="template-booker" style="text-align:center" content="\{{booker.id}}">\{{booker.userId}}</td>
+        <td id="template-booker" style="text-align:center">\{{booker.userId}}</td>
         <td id="template-reservation-id">
-            <button type="button" class="btn btn-danger btn-sm" id="btnCancel" value="\{{id}}">취소</button>
+            <button type="button" class="btn btn-danger btn-sm" id="btnCancel" value="\{{id}}" content="\{{booker.id}}">취소</button>
         </td>
     </tr>
     \{{/each}}

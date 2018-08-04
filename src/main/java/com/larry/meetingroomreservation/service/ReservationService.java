@@ -49,10 +49,8 @@ public class ReservationService {
     }
 
     @Transactional
-    public void deleteById(Long bookerId, Long reservationId) {
+    public void deleteById(Long reservationId) {
         log.info("reservation delete by id");
-        Reservation reservation = findById(reservationId);
-//        reservation.isRightBooker(bookerId);
         reservationRepository.deleteById(reservationId);
     }
 

@@ -26,8 +26,6 @@ public class JwtFactory {
 
     private final Logger log = LoggerFactory.getLogger(JwtFactory.class);
 
-    //??
-//    @SuppressFBWarnings(value = "SE_BAD_FIELD", justification = "It's okay here")
     private Clock clock = DefaultClock.INSTANCE;
 
     @Value("${jwt.issuer}")
